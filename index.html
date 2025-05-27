@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto Price Tracker</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1>Crypto Price Tracker</h1>
+            <label for="priceFilter">Filter by price</label>
+            <select name="priceFilter" id="priceFilter">
+                <option value="all">All</option>
+                <option value="below1">Below $1</option>
+                <option value="below5">$1 - $10</option>
+                <option value="below10">$10 - $100</option>
+            </select>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table id="cryptoTable">
+                <thead id="tHead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Image</th>
+                        <th>Price (USD)</th>
+                        <th>Change (24h)</th>
+                        <th>Market Cap</th>
+                        <th>Total Volume</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tBody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
